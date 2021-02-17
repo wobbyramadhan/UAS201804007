@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProdukMain"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@drawable/negativ">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input Data Barang"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/input_id"
+        android:hint="Id "
+        />
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/input_produk"
+        android:hint="Produk"
+        />
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/input_motif"
+        android:hint="Motif"/>
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/input_warna"
+        android:hint="Warna"
+        />
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/input_size"
+        android:hint="Size"
+        />
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/input_price"
+        android:hint="Price "/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            style="@style/btn_Style"
+            android:id="@+id/btn_submit"
+            android:text="ADD"
+            android:onClick="addData"/>
+        <Button
+            android:id="@+id/btn_show"
+            style="@style/btn_Style"
+            android:text="Show All"
+            android:onClick="showAll"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
